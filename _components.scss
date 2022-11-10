@@ -1,0 +1,144 @@
+@use "_base.scss" as *;
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__h1 {
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        width: 75vw;
+        font-size: 5rem;
+        font-weight: 100;
+    }
+
+    &__p1 { 
+    
+        display: flex;
+        justify-content: flex-start;
+        width: 70vw;
+        line-height: 1.5;
+    }
+
+
+
+}
+
+.about {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+
+    &__h2 {
+        font-weight: lighter;
+    }
+
+    &__img1 {
+        margin: 2rem;
+    }
+
+    &__p {
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+        line-height: 1.5;
+    }
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px red solid;
+
+
+    &__h2 {
+        display: flex;
+        flex: row;
+        justify-content: flex-start;
+        width: 85vw;
+        font-weight: lighter;
+        font-size: 2rem;
+    }
+
+    &__img {
+    width: 80vw;
+    height: 45vh;
+    }
+
+    &__titles {
+        display: flex;
+        flex-direction: row;
+        border: 2px red solid;
+        justify-content: space-between;
+    }
+
+    &__project {
+        font-size: 3rem;
+        font-weight: lighter;
+    }
+
+    &__symbol {
+        width: 3rem;
+        border-radius: 100%;
+
+        &__symbol--eye {
+            margin-left: auto;
+        }
+    }
+
+   
+    }
+
+
+
+.footer {
+    background-color: $color-black;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+
+    &__img {
+        background-color: $color-white;
+        border-radius: 90%;
+        height: 10vh;
+        padding: 1rem;
+    }
+}
+
+
+.img1 {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
