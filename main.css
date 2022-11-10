@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&display=swap");
+* {
+  padding: 0;
+  margin: 1.5rem;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__h1 {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+  font-size: 5rem;
+  font-weight: 100;
+}
+.header__p1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 70vw;
+  line-height: 1.5;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+}
+.about__h2 {
+  font-weight: lighter;
+}
+.about__img1 {
+  margin: 2rem;
+}
+.about__p {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px red solid;
+}
+.portfolio__h2 {
+  display: flex;
+  flex: row;
+  justify-content: flex-start;
+  width: 85vw;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+.portfolio__img {
+  width: 80vw;
+  height: 45vh;
+}
+.portfolio__titles {
+  display: flex;
+  flex-direction: row;
+  border: 2px red solid;
+  justify-content: space-between;
+}
+.portfolio__project {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+.portfolio__symbol {
+  width: 3rem;
+  border-radius: 100%;
+}
+.portfolio__symbol__symbol--eye {
+  margin-left: auto;
+}
+
+.footer {
+  background-color: #000000;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+}
+.footer__img {
+  background-color: #ffffff;
+  border-radius: 90%;
+  height: 10vh;
+  padding: 1rem;
+}
+
+.img1 {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
