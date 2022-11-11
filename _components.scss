@@ -138,6 +138,10 @@ div {
         border: 2px $color-black solid;
         padding: 3.5rem;
     }
+
+    // &__div {
+    //     display: none;
+    // }
     
 }
 
@@ -181,7 +185,53 @@ div {
 }
 
 
-@media screen and (max-width:1024) {
+@media screen and (min-width:1040px) {
     
+
+    .portfolio{
+        
+        &__h2 {
+            grid-area: h2;
+            display: grid;
+        }
+        &__div{
+            border: 2px red solid;
+            display: grid;
+            width: 100%;
+            grid-template-areas:
+        "Project1 Project2 Project3"
+        "Project4 Project5 Project6"
+        ;
+
+        
+    
+        &__div--1 {
+            grid-area: "Project1";
+        }
+
+        &__div--2 {
+            grid-area: "Project2";
+        }
+
+        &__div--3 {
+            grid-area: "Project3";
+        }
+
+        &__div--4 {
+            grid-area: "Project4";
+        }
+        
+        &__div--5 {
+            grid-area: "Project5";
+        }
+        &__div--6 {
+            grid-area: "Project6";
+        }
+    }
     
 }
+
+}
+    
+    
+    
