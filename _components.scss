@@ -87,24 +87,28 @@ div {
 }
 
 .portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px red solid;
-
+    
+    
+    &__div {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px red solid;
+        justify-content: center;
+    }
+     
 
     &__h2 {
         display: flex;
         flex: row;
         justify-content: flex-start;
-        width: 85vw;
+        width: 75%;
         font-weight: lighter;
         font-size: 2rem;
     }
 
     &__img {
-    width: 80vw;
-    height: 45vh;
+    width: 75%;
     }
 
     &__titles {
@@ -112,34 +116,35 @@ div {
         flex-direction: row;
         border: 2px red solid;
         justify-content: space-between;
+        width: 75%;
     }
 
     &__project {
-        font-size: 3rem;
+        font-size: 1.5rem;
         font-weight: lighter;
     }
 
     &__symbol {
-        width: 3rem;
+        width: 1.5rem;
         border-radius: 100%;
 
     }
     
     &__symbol--eye {
         margin-left: auto;
-        width: 3rem;
+        width: 1.5rem;
         border-radius: 100%;
     }
 
     &__contact {
-        font-size: 3rem;
+        font-size: 2rem;
         border: 2px $color-black solid;
-        padding: 3.5rem;
+        padding: 2.5rem;
     }
 
-    // &__hider {
-    //     display: none;
-    // }
+    &__hider {
+        display: none;
+    }
     
 }
 
@@ -207,6 +212,8 @@ div {
 
     .intro {
 
+        margin: 3%;
+
         width: 80%;
         border: 1px solid red;
         
@@ -227,6 +234,7 @@ div {
             font-size: 4rem;
             width: 100%;
             height: 100%;
+            margin-left: 6%;
         }
 
     }
@@ -234,6 +242,8 @@ div {
     .about {
             border: 2px solid green;
             width:90%;
+            margin: 3%;
+
             
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
@@ -272,6 +282,8 @@ div {
 
     .skills {
 
+        margin: 3%;
+
         display: block;
         
         border: 2px solid red;
@@ -292,12 +304,14 @@ div {
         &__p {
             font-size: 3.5rem;
             text-align: center;
+            margin-left: 5%;
         }
 
         &__icons {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            margin: 3%;
         }
 
         &__icon {
@@ -344,6 +358,7 @@ div {
                 border: 2px red solid;
                 justify-content: space-between;
                 width: 100%;
+                font-size: 5rem;
             }
 
         
@@ -360,11 +375,15 @@ div {
                 width: 5rem;
                 border-radius: 100%;
             }
-            
+
+            &__hider {
+                display: grid;
+            }            
         
         }
         
-        .bottom {
+    
+    .bottom {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -388,7 +407,7 @@ div {
     .footer {
         background-color: $color-black;
         width: 100%;
-        height: 30vh;
+        height: 15%;
         
     
         display: flex;
@@ -401,9 +420,9 @@ div {
         &__img {
             background-color: $color-white;
             border-radius: 100%;
-            height: 80%;
+            height: 100%;
             width: auto;
-            padding: 3%;
+            
         }
 
     }
