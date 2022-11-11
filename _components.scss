@@ -61,7 +61,7 @@
 
 .skills {
 
-    // display: none;
+    display: none;
 
     &__icon {
         width: 3rem;
@@ -185,29 +185,50 @@ div {
 
 @media screen and (min-width:1040px) {
     
+    .header {
+        display: flex;
+        flex-direction: row;
+        
+
+        &__h1 {
+            font-size: 4rem;
+        }
+
+        &__p2 {
+            border: 2px solid blue;
+            font-size: 3rem;
+        }
+    }
+
     .intro {
+
+        width: 80%;
+        border: 1px solid red;
         
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
         &__h1 {
-            grid-area: 1 / 1 / 2 / 7;
+            grid-area: 1 / 1 / 2 / 3;
             font-size: 12rem;
             font-weight: lighter;
+           width: 100%;
+           height: 100%;
         }
 
         &__p1 {
-            grid-area: 2 / 1 / 3 / 4;
+            grid-area: 2 / 1 / 3 / 2;
             font-size: 4rem;
-            margin: 5rem;
+            width: 100%;
+            height: 100%;
         }
 
     }
 
     .about {
             border: 2px solid green;
-
+            width:90%;
             
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
@@ -218,14 +239,14 @@ div {
                 &__h2 {
                     grid-area: 1 / 1 / 2 / 5;
                     font-size: 6rem;
-                    display: flex;
+                margin-left: 0%;
                     
                 }
                 
                 &__p1 {
                     grid-area: 2 / 1 / 3 / 5;
                     font-size: 4rem;
-                    margin: 5rem;
+                    margin-left: 5%;
                 }
 
                 &__p2 {
@@ -238,13 +259,19 @@ div {
                     grid-area: 1 / 5 / 4 / 7;
                     width: 100%;
                     height: 100%;
+                    padding: 5%;
+                   
                 }
         }   
     }
 
     .skills {
+
+        display: block;
         
         border: 2px solid red;
+
+        width: 80%;
 
 
         &__header {
@@ -253,10 +280,32 @@ div {
             border: 2px solid red;
         }
 
+        &__h1 {
+            font-size: 5rem;
+        }
+
+        &__p {
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
         &__icons {
             display: flex;
             flex-direction: row;
+            justify-content: space-evenly;
         }
+
+        &__icon {
+            height: 40%;
+            width: auto;
+            border-radius: 0;
+        }
+
+        &__iconcon {
+            width: 7%;
+        }
+
+       
 
 
 
@@ -310,7 +359,8 @@ div {
         
         }
 
-        .bottom {
+
+    .bottom {
             display: flex;
             flex-direction: column;
             align-items: center;
