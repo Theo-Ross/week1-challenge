@@ -139,7 +139,7 @@ div {
         padding: 3.5rem;
     }
 
-    // &__div {
+    // &__hider {
     //     display: none;
     // }
     
@@ -191,41 +191,51 @@ div {
     .portfolio{
         
         &__h2 {
-            grid-area: h2;
+         
             display: grid;
         }
         &__div{
-            border: 2px red solid;
+            border: 30px red solid;
             display: grid;
-            width: 100%;
             grid-template-areas:
-        "Project1 Project2 Project3"
-        "Project4 Project5 Project6"
+        "Project1  Project2  Project3"
+        "Project4  Project5  Project6"
         ;
 
         
     
         &__div--1 {
             grid-area: "Project1";
+            width: 20vw;
         }
 
         &__div--2 {
             grid-area: "Project2";
+            width: 20vw;
+
         }
 
         &__div--3 {
             grid-area: "Project3";
+            width: 20vw;
+
         }
 
         &__div--4 {
             grid-area: "Project4";
+            width: 20vw;
+
         }
         
         &__div--5 {
             grid-area: "Project5";
+            width: 20vw;
+
         }
         &__div--6 {
             grid-area: "Project6";
+            width: 20vw;
+
         }
     }
     
