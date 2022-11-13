@@ -199,14 +199,17 @@ div {
         width: 85%;
         &__h1 {
             font-size: 4rem;
-    margin-left: auto;        
+            margin-right: auto;
+               
 }
 
         &__p2 {
             display: flex;
             border: 2px solid blue;
             font-size: 3rem;
-            margin-left: auto;
+            justify-content: center;
+            width: 10%;
+            
         }
     }
 
@@ -422,7 +425,7 @@ div {
             border-radius: 100%;
             height: 100%;
             width: auto;
-            
+            padding: 3%;
         }
 
     }
