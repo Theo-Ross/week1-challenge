@@ -342,9 +342,13 @@ div {
     .portfolio{
         
         &__h2 {
-         
-            display: grid;
+            display: flex;
+            flex-direction: flex-start;
+            font-size: 5rem;
+            width: 90%;
         }
+
+
         &__div{
             border: 4px red solid;
             display: grid;
@@ -365,7 +369,6 @@ div {
                 flex-direction: row;
                 border: 2px red solid;
                 width: 100%;
-                font-size: 15rem;
             }
 
         &__project {
