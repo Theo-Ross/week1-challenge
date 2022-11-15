@@ -88,15 +88,6 @@ div {
 
 .portfolio {
     
-    
-    &__div {    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 2px red solid;
-        justify-content: center;
-    }
-     
 
     &__h2 {
         display: flex;
@@ -106,9 +97,40 @@ div {
         font-weight: lighter;
         font-size: 2rem;
     }
+    
+    &__div {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px red solid;
+        justify-content: center;
+        justify-items: center;
+    
+    }
+
+    &__div--1 {
+       margin: 3%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    &__div--2 {
+       margin: 3%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    &__div--3 {
+        margin: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__img {
-    width: 75%;
+    width: 74%;
     }
 
     &__titles {
@@ -152,7 +174,7 @@ div {
 .footer {
     background-color: $color-black;
     width: 100%;
-    height: 15%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -171,20 +193,9 @@ div {
         border-radius: 100%;
 
         border-radius: 100%;
-        height: 10rem;
-        width: 10rem;
+        height: 5rem;
+        width: 5rem;
         margin: 1rem;
-    }
-
-    &__text {
-        background-color: $color-white;
-        font-size: 2.5rem;
-        padding: 1rem;
-        border-radius: 50%;
-        height: 4.5rem;
-        width: 4.5rem;
-        display: flex;
-        justify-content: center;
     }
 }
 
@@ -199,9 +210,9 @@ div {
         
         border: 2px solid red;
 
-        width: 85%;
+        width: 90%;
         &__h1 {
-            font-size: 4rem;
+            font-size: 2rem;
             margin-right: auto;
                
 }
@@ -209,7 +220,7 @@ div {
         &__p2 {
             display: flex;
             border: 2px solid blue;
-            font-size: 3rem;
+            font-size: 1.5rem;
             justify-content: center;
             width: 10%;
             font-family: $secondary-font;
@@ -230,7 +241,7 @@ div {
 
         &__h1 {
             grid-area: 1 / 1 / 2 / 3;
-            font-size: 12rem;
+            font-size: 5rem;
             font-weight: lighter;
            width: 100%;
            height: 100%;
@@ -238,7 +249,7 @@ div {
 
         &__p1 {
             grid-area: 2 / 1 / 3 / 2;
-            font-size: 4rem;
+            font-size: 0.9rem;
             width: 100%;
             height: 100%;
             margin-left: 6%;
@@ -261,26 +272,31 @@ div {
                 
                 &__h2 {
                     grid-area: 1 / 1 / 2 / 5;
-                    font-size: 6rem;
+                    font-size: 2rem;
                 margin-left: 0%;
                     
                 }
                 
                 &__p1 {
-                    grid-area: 2 / 1 / 3 / 5;
-                    font-size: 4rem;
+                    grid-area: 2 / 1 / 3 / 4;
+                    font-size: 0.9rem;
                     margin-right: auto;
+                    width: auto;
+                    height:auto;
                 }
 
                 &__p2 {
-                    grid-area: 3 / 1 / 4 / 5;
-                    font-size: 4rem;
+                    grid-area: 3 / 1 / 4 / 4;
+                    font-size: 0.9rem;
                     margin-right: auto;
+                    width: auto;
+                    height: auto;
+
                 }
 
                 &__img {
                     grid-area: 1 / 5 / 4 / 7;
-                    width: auto;
+                    width: 100%;
                     padding: 5%;
                    
                 }
@@ -295,7 +311,7 @@ div {
         
         border: 2px solid red;
 
-        width: 80%;
+        width: 90%;
 
 
         &__header {
@@ -304,19 +320,24 @@ div {
             border: 2px solid red;
         }
 
+        // fix into a class for all titles similar to this>
         &__h1 {
-            font-size: 5rem;
+            font-size: 1.9rem;
+            font-weight: lighter;
         }
 
         &__p {
-            font-size: 3.5rem;
+            font-size: 0.9rem;
             margin-left: 5%;
+            padding: 2%;
         }
 
         &__p--icon {
-            font-size: 3.5rem;
-            margin-left: 5%;
-            text-align: center;
+            font-size: 0.9rem;
+            margin: 0.3;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
         }
 
         &__icons {
@@ -324,6 +345,8 @@ div {
             flex-direction: row;
             justify-content: space-evenly;
             margin: 3%;
+            width: 50%;
+            margin-left: 25%;            
         }
 
         &__icon {
@@ -349,7 +372,7 @@ div {
         &__h2 {
             display: flex;
             flex-direction: flex-start;
-            font-size: 5rem;
+            font-size: 2rem;
             width: 90%;
         }
 
@@ -359,8 +382,8 @@ div {
             display: grid;
 	    grid-template-columns: 1fr 1fr 1fr;
 	    grid-template-rows: 1fr 1fr;
-	    grid-column-gap: 3rem;
-	    grid-row-gap: 3rem;
+	    grid-column-gap: 1.5rem;
+	    grid-row-gap: 1.5rem;
         width: 90%;
         }
 
@@ -374,30 +397,32 @@ div {
                 flex-direction: row;
                 border: 2px red solid;
                 width: 100%;
+                
             }
 
+
         &__project {
-            font-size: 4rem;
-            margin: 0;
+            font-size: 1.6rem;
+            margin: 1rem;
             margin-right: auto;
         }
 
+        &__symbol--eye {
+            margin-left: auto;
+            margin: 1rem;
+            width: 2rem;
+            border-radius: 100%;
+        }
         
         &__symbol {
-                width: 5rem;
+                width: 2rem;
                 margin: 1rem;
                 border-radius: 100%;
                 display: flex;
                 flex-direction: row;
-        
             }
             
-        &__symbol--eye {
-                margin-left: auto;
-                margin: 1rem;
-                width: 5rem;
-                border-radius: 100%;
-            }
+       
 
         &__hider {
                 display: flex;
@@ -412,16 +437,16 @@ div {
             align-items: center;
 
             &__h1 {
-                font-size: 10rem;
+                font-size: 5rem;
                 font-weight: lighter;
             }
 
             &__p {
-                font-size: 5rem;
+                font-size: 2rem;
                 border: 2px solid black;
-                width: 50%;
-                padding: 4rem;
+                padding: 2rem;
                 height: 10%;
+
             }
 
         }
@@ -444,8 +469,8 @@ div {
             border-radius: 100%;
 
             border-radius: 100%;
-            height: 10rem;
-            width: 10rem;
+            height: 3rem;
+            width: 3rem;
             margin: 1rem;
         }
 
